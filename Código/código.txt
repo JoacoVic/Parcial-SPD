@@ -212,7 +212,7 @@ void encenderDisplay(int contador)
 
 //Verifica que al presionar el botón y mantenerlo apretado
 //no sigan cambiando los valores de los displays
-int presionarBoton(void)
+int presionarBoton(void)//Esta función no recibe parámetros y devuelve un entero
 {
  //Comprobamos si el botón está apagado y si anteriormente
  // también lo estaba
