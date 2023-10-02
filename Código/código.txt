@@ -214,7 +214,7 @@ void encenderDisplay(int contador)
 //no sigan cambiando los valores de los displays
 int presionarBoton(void)
 {
- //Comprobamos si el botón estaba apagado y si anteriormente
+ //Comprobamos si el botón está apagado y si anteriormente
  // también lo estaba
  botonSubir = digitalRead(SUBIR);
  botonBajar = digitalRead(BAJAR);
@@ -226,7 +226,7 @@ int presionarBoton(void)
  if(botonResetear)
    botonResetearPrevio = 1;
  
- //Devuelve el valor del pulsador si se presiona el botón
+ //Devuelve el valor del pulsador si y solo si se presiona el botón
  //y anteriormente no estaba prendido
  if (botonSubir == 0 && botonSubir != botonSubirPrevio)
   {
